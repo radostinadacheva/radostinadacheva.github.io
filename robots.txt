@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://radostina-dacheva-portfolio.zippybetta24.chatgpt.site/sitemap.xml
+Sitemap: https://radostinadacheva.github.io/sitemap.xml
