@@ -113,3 +113,13 @@
 .work-list .work-orbit .work-case-link{left:47%;top:auto;bottom:8%;width:auto;height:auto;padding:8px 16px;z-index:4;color:white;font:clamp(17px,1.7vw,25px)/1.4 Outfit,Arial,sans-serif;border-radius:6px;text-decoration:none}
 .work-list .work-orbit .work-case-link:hover{background:#ffffff24}
 @media(max-width:760px){.work-list .work-orbit{width:100%;aspect-ratio:1.15;min-height:340px}.work-list .work-orbit .orbit-work-art{padding:8% 15% 14% 7%;gap:4%;grid-template-columns:1fr 1fr}.work-list .work-orbit .orbit-work-art:after{border-radius:0 55px 55px 0}.work-list .work-orbit .orbit-work-copy{font-size:clamp(12px,3vw,16px)}.work-list .work-orbit .orbit-work-brand strong{font-size:clamp(33px,7vw,52px)}.work-list .work-orbit .orbit-work-brand img{width:clamp(60px,15vw,90px)}.work-list .work-orbit .orbit-work-tab{top:8%;height:28%}.work-list .work-orbit .orbit-work-case-link{font-size:16px}.work-list .work-orbit .work-case-link{bottom:7%;left:38%;font-size:16px}}
+
+/* Exact Orbit artwork supplied by the designer. The existing See more link is the only overlay. */
+.work-list .work-orbit{position:relative;width:81%;max-width:1007px;aspect-ratio:1008/605;min-height:0!important;overflow:visible}
+.work-list .work-orbit .orbit-card-exact{position:relative;display:block;width:100%;height:auto;aspect-ratio:1008/605;object-fit:fill;clip-path:none;border-radius:0}
+.work-list .work-orbit .work-case-title,.work-list .work-orbit .work-description{display:none!important}
+.work-list .work-orbit .work-case-link{position:absolute;left:53%;top:81%;bottom:auto;width:24%;height:13%;padding:0;z-index:5;display:block;background:transparent;color:transparent!important;font-size:0;border:0;border-radius:0}
+.work-list .work-orbit .work-case-link span{opacity:0}
+.work-list .work-orbit .work-case-link:hover{background:transparent}
+.work-list .work-orbit .work-case-link:focus-visible{outline:3px solid #fff;outline-offset:2px}
+@media(max-width:760px){.work-list .work-orbit{width:100%;min-height:0!important;aspect-ratio:1008/605}.work-list .work-orbit .orbit-card-exact{aspect-ratio:1008/605}.work-list .work-orbit .work-case-link{left:52%;top:79%;width:28%;height:17%}}
