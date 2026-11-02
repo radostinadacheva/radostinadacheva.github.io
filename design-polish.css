@@ -97,3 +97,19 @@
 .work-list .work-orbit .orbit-work-brand img{width:150px;height:auto}
 .work-list .work-orbit .work-description{display:none}
 @media(max-width:760px){.orbit-folder-art{padding:8%;gap:4%}.orbit-folder-copy{font-size:14px}.orbit-folder-brand strong{font-size:40px}.orbit-folder-brand img{width:75px}.work-list .work-orbit .orbit-work-art{min-height:380px;grid-template-columns:1fr 1fr;padding:8%}.work-list .work-orbit .orbit-work-copy{font-size:14px}.work-list .work-orbit .orbit-work-brand strong{font-size:48px}.work-list .work-orbit .orbit-work-brand img{width:80px}}
+
+/* Orbit case-studies card: full-page artwork with distinct pale-pink folder tab. */
+.work-list .work-orbit{width:81%;max-width:1007px;aspect-ratio:1007/600;margin-bottom:110px;min-height:0;overflow:visible}
+.work-list .work-orbit .orbit-work-art{position:absolute;inset:0;width:100%;height:100%;min-height:0;display:grid;grid-template-columns:1fr 1.1fr;gap:6%;align-items:center;padding:7% 15% 7% 8%;box-sizing:border-box;background:transparent;border-radius:0;clip-path:none;overflow:visible;isolation:isolate}
+.work-list .work-orbit .orbit-work-art:before{content:'';position:absolute;z-index:-1;left:0;right:10%;top:0;bottom:0;background:linear-gradient(115deg,#463460,#8967cd);border-radius:32px 0 0 0}
+.work-list .work-orbit .orbit-work-art:after{content:'';position:absolute;z-index:-2;right:0;top:0;width:15%;height:100%;background:#f3d5e1;border-radius:0 110px 100px 0;clip-path:polygon(0 0,72% 0,100% 6%,100% 42%,79% 48%,37% 52%,27% 100%,0 100%)}
+.work-list .work-orbit .orbit-work-copy{font:clamp(16px,1.65vw,23px)/1.55 Outfit,Arial,sans-serif;max-width:340px}
+.work-list .work-orbit .orbit-work-brand{align-items:center;justify-content:center;gap:24px;position:relative;z-index:1}
+.work-list .work-orbit .orbit-work-brand strong{font:600 clamp(55px,6vw,92px)/1 Mirador,Georgia,serif}
+.work-list .work-orbit .orbit-work-brand img{width:clamp(95px,12vw,150px);height:auto;object-fit:contain}
+.work-list .work-orbit .orbit-work-tab{position:absolute;right:2.8%;top:8%;width:6.7%;height:28%;background:#f9f6f2;border:1px solid #c8bbc3;display:flex;align-items:center;justify-content:center;z-index:2;box-shadow:0 1px 3px #0002}
+.work-list .work-orbit .orbit-work-tab span{font:clamp(12px,1.2vw,17px)/1 Outfit,Arial,sans-serif;writing-mode:vertical-rl;transform:rotate(180deg);color:#343034}
+.work-list .work-orbit .work-case-title{display:none}
+.work-list .work-orbit .work-case-link{left:47%;top:auto;bottom:8%;width:auto;height:auto;padding:8px 16px;z-index:4;color:white;font:clamp(17px,1.7vw,25px)/1.4 Outfit,Arial,sans-serif;border-radius:6px;text-decoration:none}
+.work-list .work-orbit .work-case-link:hover{background:#ffffff24}
+@media(max-width:760px){.work-list .work-orbit{width:100%;aspect-ratio:1.15;min-height:340px}.work-list .work-orbit .orbit-work-art{padding:8% 15% 14% 7%;gap:4%;grid-template-columns:1fr 1fr}.work-list .work-orbit .orbit-work-art:after{border-radius:0 55px 55px 0}.work-list .work-orbit .orbit-work-copy{font-size:clamp(12px,3vw,16px)}.work-list .work-orbit .orbit-work-brand strong{font-size:clamp(33px,7vw,52px)}.work-list .work-orbit .orbit-work-brand img{width:clamp(60px,15vw,90px)}.work-list .work-orbit .orbit-work-tab{top:8%;height:28%}.work-list .work-orbit .orbit-work-case-link{font-size:16px}.work-list .work-orbit .work-case-link{bottom:7%;left:38%;font-size:16px}}
