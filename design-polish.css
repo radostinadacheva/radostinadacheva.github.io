@@ -94,3 +94,7 @@
 @media(max-width:760px){.work-list .work-orbit .orbit-work-art{min-height:350px;grid-template-columns:1fr;gap:12px;padding:32px}.work-list .work-orbit .orbit-work-title strong{font-size:52px}}
 /* Dropdown visibility driven by the expanded state, not hover after a click. */
 .nav .dropdown:not(.open):not(:focus-within) .dropdown-menu{visibility:hidden;opacity:0}
+
+/* A closed dropdown stays closed even under pointer hover or keyboard focus. */
+.nav .dropdown:not(.open) .dropdown-menu,.nav .dropdown:not(.open):hover .dropdown-menu,.nav .dropdown:not(.open):focus-within .dropdown-menu{opacity:0!important;visibility:hidden!important;pointer-events:none!important;transform:translateY(-5px)!important}
+.nav .dropdown.open .dropdown-menu{opacity:1!important;visibility:visible!important;pointer-events:auto!important;transform:none!important}
