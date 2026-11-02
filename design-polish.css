@@ -123,3 +123,16 @@
 .work-list .work-orbit .work-case-link:hover{background:transparent}
 .work-list .work-orbit .work-case-link:focus-visible{outline:3px solid #fff;outline-offset:2px}
 @media(max-width:760px){.work-list .work-orbit{width:100%;min-height:0!important;aspect-ratio:1008/605}.work-list .work-orbit .orbit-card-exact{aspect-ratio:1008/605}.work-list .work-orbit .work-case-link{left:52%;top:79%;width:28%;height:17%}}
+
+/* Orbit: original card artwork, with the black matte removed in orbit-card-clean.svg. */
+.work-list .work-orbit .orbit-card-exact{display:block;width:100%;height:auto;aspect-ratio:1008/605;object-fit:contain;background:transparent}
+.work-list .work-orbit .work-case-link{left:55.4%;top:84.2%;width:19.8%;height:9.5%;border:1px solid rgba(255,255,255,.45);border-radius:12px;box-shadow:0 0 0 1px #ffffff08 inset;transition:background .2s,border-color .2s,transform .2s;cursor:pointer}
+.work-list .work-orbit .work-case-link:hover,.work-list .work-orbit .work-case-link:focus-visible{background:rgba(255,255,255,.18)!important;border-color:white;transform:translateY(-2px)}
+/* Orbit selection: keep the other three pages on the left; reveal the fourth on the right,
+   without translating the fourth page in the wrong direction. */
+@media(min-width:761px){
+.folder-browser[data-active="3"] .drawer-0,.folder-browser[data-active="3"] .drawer-1,.folder-browser[data-active="3"] .drawer-2{transform:none!important}
+.folder-browser[data-active="3"] .drawer-3,.folder-browser[data-active="3"] .drawer-3.is-open{left:50%;width:50%;transform:none!important;z-index:9}
+.folder-browser[data-active="3"] .drawer-3 .case-sheet,.folder-browser[data-active="3"] .drawer-3.is-open .case-sheet{left:0;width:100%;transform:none!important;transition:opacity .3s ease}
+.folder-browser[data-active="3"] .drawer-3 .case-more{opacity:1;visibility:visible;pointer-events:auto}
+}
