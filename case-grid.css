@@ -1,0 +1,198 @@
+/* Case Studies — faithful editorial 2x2 layout based on Figma node 123:12591.
+   Scoped to /work/ only. Does not affect the homepage's animated folder. */
+.work-list.portfolio-grid{
+  display:block!important;
+  padding:98px max(4.23%,24px) 146px!important;
+  background:#e4d9c6 var(--paper-bg) center/cover!important;
+}
+.work-list.portfolio-grid .portfolio-grid-inner{
+  display:grid!important;
+  width:100%!important;
+  max-width:1384px!important;
+  margin:0 auto!important;
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:87px 33px!important;
+  align-items:start!important;
+}
+.work-list.portfolio-grid article.work-case{
+  position:relative!important;
+  width:100%!important;
+  min-width:0!important;
+  max-width:none!important;
+  height:auto!important;
+  min-height:0!important;
+  aspect-ratio:auto!important;
+  margin:0!important;
+  padding:0!important;
+  display:block!important;
+  overflow:visible!important;
+  isolation:isolate!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+  background:none!important;
+  transform:none!important;
+}
+.work-list.portfolio-grid .grid-case-media{
+  position:relative!important;
+  width:100%!important;
+  aspect-ratio:674/502!important;
+  overflow:hidden!important;
+  border-radius:12px!important;
+  background:#7d70b4!important;
+  box-shadow:.5px .5px 3.6px 1px rgba(0,0,0,.30)!important;
+  transform:translateZ(0);
+}
+.work-list.portfolio-grid .grid-case-image{
+  display:block!important;
+  position:absolute!important;
+  inset:0!important;
+  width:100%!important;
+  height:100%!important;
+  max-width:none!important;
+  border:0!important;
+  border-radius:12px!important;
+  object-fit:cover!important;
+  object-position:center!important;
+  transition:transform .4s ease!important;
+}
+.work-list.portfolio-grid .grid-case-orbit .grid-case-media{
+  background:linear-gradient(100deg,#46386b,#896dd1)!important;
+}
+.work-list.portfolio-grid .grid-orbit-art{
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:clamp(14px,3.2vw,44px)!important;
+  width:100%!important;
+  height:100%!important;
+  color:#fff!important;
+}
+.work-list.portfolio-grid .grid-orbit-art>span{
+  font:500 clamp(36px,5vw,64px)/1.15 Mirador,Georgia,serif!important;
+}
+.work-list.portfolio-grid .grid-orbit-art>img{
+  width:34%!important;
+  max-width:229px!important;
+  height:auto!important;
+  object-fit:contain!important;
+  display:block!important;
+}
+.work-list.portfolio-grid .grid-case-caption{
+  margin-top:20px!important;
+  color:#a95173!important;
+  font:500 clamp(19px,2.38vw,36px)/1.15 Outfit,Arial,sans-serif!important;
+}
+.work-list.portfolio-grid .grid-case-caption h2,
+.work-list.portfolio-grid .grid-case-caption p{
+  position:static!important;
+  display:block!important;
+  width:auto!important;
+  height:auto!important;
+  margin:0!important;
+  padding:0!important;
+  border:0!important;
+  color:inherit!important;
+  clip:initial!important;
+  clip-path:none!important;
+  overflow:visible!important;
+  font:inherit!important;
+  letter-spacing:0!important;
+  text-transform:none!important;
+  white-space:normal!important;
+}
+.work-list.portfolio-grid .grid-case-link,
+.work-list.portfolio-grid .grid-case-unavailable{
+  position:absolute!important;
+  inset:0!important;
+  z-index:2!important;
+  display:flex!important;
+  justify-content:center!important;
+  align-items:flex-end!important;
+  width:100%!important;
+  height:100%!important;
+  padding:0 0 6%!important;
+  border:0!important;
+  border-radius:12px!important;
+  box-sizing:border-box!important;
+  color:#fff!important;
+  background:rgba(0,0,0,0)!important;
+  text-decoration:none!important;
+  cursor:pointer!important;
+  opacity:1!important;
+  visibility:visible!important;
+  transition:background .25s ease!important;
+}
+.work-list.portfolio-grid .grid-case-link>span,
+.work-list.portfolio-grid .grid-case-unavailable>span{
+  position:static!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:10px!important;
+  width:auto!important;
+  height:auto!important;
+  overflow:visible!important;
+  clip:initial!important;
+  clip-path:none!important;
+  color:white!important;
+  font:400 clamp(17px,1.7vw,24px)/1.5 Outfit,Arial,sans-serif!important;
+  opacity:0!important;
+  visibility:hidden!important;
+  transform:translateY(8px)!important;
+  transition:opacity .25s ease,transform .25s ease,visibility .25s ease!important;
+}
+.work-list.portfolio-grid .grid-case-link:hover,
+.work-list.portfolio-grid .grid-case-link:focus-visible,
+.work-list.portfolio-grid .grid-case-unavailable:hover{
+  background:rgba(0,0,0,.57)!important;
+}
+.work-list.portfolio-grid .grid-case-link:hover>span,
+.work-list.portfolio-grid .grid-case-link:focus-visible>span,
+.work-list.portfolio-grid .grid-case-unavailable:hover>span{
+  opacity:1!important;
+  visibility:visible!important;
+  transform:translateY(0)!important;
+}
+.work-list.portfolio-grid .grid-case-link:focus-visible{
+  outline:3px solid #fff!important;
+  outline-offset:-6px!important;
+}
+.work-list.portfolio-grid .grid-case-unavailable{
+  cursor:default!important;
+}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){
+  .work-list.portfolio-grid .grid-case-media:has(.grid-case-link:hover) .grid-case-image{
+    transform:scale(1.035)!important;
+  }
+}
+@media(max-width:900px){
+  .work-list.portfolio-grid{padding:65px 5% 100px!important;}
+  .work-list.portfolio-grid .portfolio-grid-inner{gap:64px 24px!important;}
+  .work-list.portfolio-grid .grid-case-caption{font-size:clamp(18px,2.3vw,27px)!important;}
+}
+@media(max-width:650px){
+  .work-list.portfolio-grid{padding:52px 20px 95px!important;}
+  .work-list.portfolio-grid .portfolio-grid-inner{
+    grid-template-columns:minmax(0,1fr)!important;
+    gap:45px!important;
+  }
+  .work-list.portfolio-grid .grid-case-caption{
+    margin-top:14px!important;
+    font-size:clamp(20px,5.1vw,29px)!important;
+  }
+  .work-list.portfolio-grid .grid-case-link{
+    background:transparent!important;
+  }
+  .work-list.portfolio-grid .grid-case-link>span{
+    opacity:0!important;
+  }
+  .work-list.portfolio-grid .grid-orbit-art>span{font-size:clamp(36px,10vw,55px)!important;}
+  .work-list.portfolio-grid .grid-orbit-art>img{width:36%!important;}
+}
+@media(prefers-reduced-motion:reduce){
+  .work-list.portfolio-grid .grid-case-image,
+  .work-list.portfolio-grid .grid-case-link,
+  .work-list.portfolio-grid .grid-case-link>span{transition:none!important;}
+}
