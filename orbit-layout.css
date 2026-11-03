@@ -1,0 +1,71 @@
+/* Orbit — isolated styles. This file loads after all older stylesheets. */
+.folder-browser .drawer-3 .case-sheet{position:absolute!important;inset:0!important;height:100%!important;overflow:visible!important}
+.folder-browser .drawer-3 .orbit-folder-shape-home{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;max-width:none!important;object-fit:fill!important;pointer-events:none!important;filter:drop-shadow(1px 2px 3px #0003)}
+.folder-browser .drawer-3 .orbit-folder-art{
+position:absolute!important;inset:0 auto 0 0!important;width:88%!important;height:100%!important;
+min-height:0!important;background:transparent!important;box-shadow:none!important;
+padding:0!important;margin:0!important;display:flex!important;
+align-items:center!important;justify-content:center!important;overflow:hidden!important;
+pointer-events:none!important;border-radius:0!important;
+}
+.folder-browser .drawer-3 .orbit-folder-brand{
+display:flex!important;flex-direction:column!important;align-items:center!important;
+justify-content:center!important;width:100%!important;gap:clamp(12px,2vw,22px)!important;
+transform:none!important;
+}
+.folder-browser .drawer-3 .orbit-folder-brand strong{color:#fff!important;font:600 clamp(35px,5.3vw,77px)/1 Mirador,Georgia,serif!important}
+.folder-browser .drawer-3 .orbit-folder-brand img{display:block!important;width:clamp(90px,12vw,155px)!important;height:auto!important;object-fit:contain!important;image-rendering:auto!important}
+.folder-browser .drawer-3 .case-tab{z-index:5!important}
+.folder-browser .drawer-3 .case-more{z-index:6!important}
+/* The Case Studies card uses precisely the same vector as the home card. */
+.work-list .work-orbit{position:relative!important;display:block!important;overflow:hidden!important;
+  width:min(100%,1007px)!important;max-width:1007px!important;height:auto!important;
+  min-height:0!important;aspect-ratio:1008/605!important;margin-inline:auto!important;
+  padding:0!important;background:transparent!important;border-radius:30px 80px 0 0!important;
+  box-shadow:0 7px 18px #37283d30!important}
+.work-list .work-orbit .orbit-card-native{position:absolute!important;inset:0!important;display:grid!important;
+  grid-template-columns:1fr 1fr!important;align-items:start!important;column-gap:6%!important;
+  width:100%!important;height:100%!important;min-height:0!important;box-sizing:border-box!important;
+  padding:12% 15% 0 8%!important;margin:0!important;
+  background:transparent!important;clip-path:none!important;border-radius:0!important;
+  overflow:hidden!important;isolation:isolate!important}
+.work-list .work-orbit .orbit-card-native::before,.work-list .work-orbit .orbit-card-native::after{content:none!important;display:none!important}
+.work-list .work-orbit .orbit-folder-shape-work{position:absolute!important;z-index:0!important;
+  inset:0!important;display:block!important;width:100%!important;height:100%!important;
+  max-width:none!important;object-fit:fill!important;pointer-events:none!important}
+.work-list .work-orbit .orbit-native-description{position:relative!important;z-index:1!important;grid-column:1!important;
+  color:#fff!important;width:100%!important;max-width:315px!important;
+  font:clamp(15px,1.8vw,23px)/1.55 Outfit,Arial,sans-serif!important}
+.work-list .work-orbit .orbit-native-brand{position:relative!important;z-index:1!important;grid-column:2!important;
+  margin:-1% 0 0!important;display:flex!important;flex-direction:column!important;align-items:center!important;
+  gap:18px!important}
+.work-list .work-orbit .orbit-native-brand strong{color:#fff!important;
+  font:600 clamp(42px,6.3vw,87px)/1 Mirador,Georgia,serif!important;white-space:nowrap!important}
+.work-list .work-orbit .orbit-native-brand img{width:clamp(90px,13vw,155px)!important;height:auto!important;object-fit:contain!important}
+.work-list .work-orbit .orbit-native-tab{position:absolute!important;z-index:3!important;
+  top:7.8%!important;right:2.5%!important;width:6.5%!important;height:25%!important;
+  display:flex!important;align-items:center!important;justify-content:center!important;
+  border:0!important;background:transparent!important;box-shadow:none!important}
+.work-list .work-orbit .orbit-native-tab span{display:block!important;color:#302a31!important;
+  writing-mode:vertical-rl!important;transform:rotate(180deg)!important;
+  font:clamp(10px,1.1vw,16px)/1 Outfit,Arial,sans-serif!important}
+.work-list .work-orbit .work-case-title,.work-list .work-orbit .work-description{display:none!important}
+.work-list .work-orbit .work-case-link{position:absolute!important;z-index:4!important;
+  left:54%!important;right:auto!important;bottom:7%!important;top:auto!important;
+  width:auto!important;height:auto!important;min-height:0!important;
+  display:inline-flex!important;align-items:center!important;padding:10px 14px!important;
+  background:transparent!important;border:1px solid transparent!important;border-radius:8px!important;
+  color:#fff!important;font:clamp(15px,1.6vw,22px)/1.3 Outfit,Arial,sans-serif!important;text-decoration:none!important}
+.work-list .work-orbit .work-case-link span{position:static!important;display:inline!important;width:auto!important;height:auto!important;clip-path:none!important;overflow:visible!important;opacity:1!important;color:#fff!important}
+.work-list .work-orbit .work-case-link:is(:hover,:focus-visible){background:#ffffff25!important;border-color:#ffffff8c!important}
+@media(max-width:760px){
+ .work-list .work-orbit{aspect-ratio:1.15!important;border-radius:24px 55px 0 0!important}
+ .work-list .work-orbit .orbit-card-native{padding:10% 15% 0 7%!important;column-gap:5%!important}
+ .work-list .work-orbit .orbit-native-description{font-size:clamp(11px,2.6vw,15px)!important}
+ .work-list .work-orbit .orbit-native-brand{gap:10px!important}
+ .work-list .work-orbit .orbit-native-brand strong{font-size:clamp(29px,7vw,46px)!important}
+ .work-list .work-orbit .orbit-native-brand img{width:clamp(58px,16vw,90px)!important}
+ .work-list .work-orbit .work-case-link{left:49%!important;bottom:5%!important;font-size:15px!important}
+ .folder-browser .drawer-3 .orbit-folder-brand strong{font-size:52px!important}
+ .folder-browser .drawer-3 .orbit-folder-brand img{width:110px!important}
+}
