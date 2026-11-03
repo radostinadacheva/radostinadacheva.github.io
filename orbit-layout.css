@@ -1,22 +1,62 @@
-/* Orbit — isolated styles. This file loads after all older stylesheets. */
-.folder-browser .drawer-3 .case-sheet{position:absolute!important;inset:0!important;height:100%!important;overflow:visible!important}
-.folder-browser .drawer-3 .orbit-folder-shape-home{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;max-width:none!important;object-fit:fill!important;pointer-events:none!important;filter:drop-shadow(1px 2px 3px #0003)}
+/* Original Figma folder: Orbit is the fourth leaf, not a standalone panel. */
+@media(min-width:761px){
+ .folder-browser .folders{isolation:isolate!important;}
+ /* Figma initial leaf positions: 17.56%, 30.15%, 42%, 53.72%.
+    Figma Orbit hover variant: 3.56%, 9.80%, 16.68%, 53.72%. */
+ .folder-browser[data-active="3"] .case-drawer{
+   top:0!important;bottom:0!important;width:46.28%!important;height:100%!important;
+   pointer-events:none!important;transition:left .241s ease-in!important;
+   transform:none!important;
+ }
+ .folder-browser[data-active="3"] .drawer-0{left:3.56%!important;z-index:6!important;}
+ .folder-browser[data-active="3"] .drawer-1{left:9.80%!important;z-index:5!important;}
+ .folder-browser[data-active="3"] .drawer-2{left:16.68%!important;z-index:4!important;}
+ .folder-browser[data-active="3"] .drawer-3{left:53.72%!important;z-index:9!important;pointer-events:auto!important;}
+ .folder-browser[data-active="3"] .case-drawer .case-sheet,
+ .folder-browser[data-active="3"] .case-drawer.is-open .case-sheet{
+   position:absolute!important;left:0!important;top:0!important;
+   width:100%!important;height:100%!important;
+   transform:none!important;transition:none!important;
+ }
+ .folder-browser[data-active="3"] .drawer-3 .case-more{
+   opacity:1!important;visibility:visible!important;pointer-events:auto!important;
+ }
+ /* Start of the next hover transition at the Figma positions, not a jump. */
+ .folder-browser .drawer-0,.folder-browser .drawer-1,
+ .folder-browser .drawer-2,.folder-browser .drawer-3{
+   transition:left .241s ease-in,transform .241s ease-in!important;
+ }
+}
+.folder-browser .drawer-3 .case-sheet{overflow:visible!important;}
+.folder-browser .drawer-3 .case-shell{
+ position:absolute!important;inset:0!important;width:100%!important;height:100%!important;
+ object-fit:fill!important;pointer-events:none!important;
+}
 .folder-browser .drawer-3 .orbit-folder-art{
-position:absolute!important;inset:0 auto 0 0!important;width:88%!important;height:100%!important;
-min-height:0!important;background:transparent!important;box-shadow:none!important;
-padding:0!important;margin:0!important;display:flex!important;
-align-items:center!important;justify-content:center!important;overflow:hidden!important;
-pointer-events:none!important;border-radius:0!important;
+ position:absolute!important;left:0!important;top:.66%!important;
+ bottom:.97%!important;width:88.2%!important;height:auto!important;
+ min-height:0!important;max-height:none!important;
+ margin:0!important;padding:0!important;box-sizing:border-box!important;
+ display:flex!important;align-items:center!important;justify-content:center!important;
+ background:linear-gradient(112deg,#49385f,#896ac9)!important;
+ border-radius:24px 0 0 0!important;overflow:hidden!important;
+ pointer-events:none!important;box-shadow:none!important;
 }
 .folder-browser .drawer-3 .orbit-folder-brand{
-display:flex!important;flex-direction:column!important;align-items:center!important;
-justify-content:center!important;width:100%!important;gap:clamp(12px,2vw,22px)!important;
-transform:none!important;
+ width:100%!important;display:flex!important;flex-direction:column!important;
+ justify-content:center!important;align-items:center!important;
+ gap:clamp(12px,2vw,22px)!important;transform:none!important;
 }
-.folder-browser .drawer-3 .orbit-folder-brand strong{color:#fff!important;font:600 clamp(35px,5.3vw,77px)/1 Mirador,Georgia,serif!important}
-.folder-browser .drawer-3 .orbit-folder-brand img{display:block!important;width:clamp(90px,12vw,155px)!important;height:auto!important;object-fit:contain!important;image-rendering:auto!important}
-.folder-browser .drawer-3 .case-tab{z-index:5!important}
-.folder-browser .drawer-3 .case-more{z-index:6!important}
+.folder-browser .drawer-3 .orbit-folder-brand strong{
+ font:600 clamp(35px,5.3vw,77px)/1 Mirador,Georgia,serif!important;color:white!important;
+}
+.folder-browser .drawer-3 .orbit-folder-brand img{
+ display:block!important;width:clamp(90px,12vw,155px)!important;
+ height:auto!important;object-fit:contain!important;image-rendering:auto!important;
+}
+.folder-browser .drawer-3 .case-tab{z-index:5!important;}
+.folder-browser .drawer-3 .case-more{z-index:6!important;}
+
 /* The Case Studies card uses precisely the same vector as the home card. */
 .work-list .work-orbit{position:relative!important;display:block!important;overflow:hidden!important;
   width:min(100%,1007px)!important;max-width:1007px!important;height:auto!important;
