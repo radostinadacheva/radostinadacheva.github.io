@@ -118,3 +118,129 @@
  .folder-browser .case-tab,.folder-browser .case-drawer.is-open .case-tab,.work-list .work-case-title{position:absolute;top:7%;right:3%;left:auto;bottom:auto;width:6.6%;height:23%;min-width:0;min-height:0;margin:0;padding:0;display:grid;place-items:center;writing-mode:horizontal-tb;transform:none;overflow:hidden;border-radius:0;background:#f7f5f0;box-shadow:inset 1px -1px 3px #0005;text-transform:none}
  .folder-browser .case-tab>span,.work-list .work-case-title>span{display:block;writing-mode:vertical-rl;transform:rotate(180deg);font:12px/1 Outfit,sans-serif;white-space:nowrap;margin:0;padding:0;text-transform:none}
 }
+
+
+/* Orbit final folder geometry. Loaded after every other stylesheet. */
+.folder-browser .drawer-3 .case-sheet{
+  overflow:visible!important;
+}
+.folder-browser .drawer-3 .orbit-folder-art{
+  position:absolute!important;left:0!important;top:0!important;
+  bottom:auto!important;width:88.2%!important;
+  height:calc(100% - 2px)!important;max-height:100%!important;
+  background:linear-gradient(115deg,#493860 0%,#896ac8 100%)!important;
+  display:flex!important;align-items:center!important;justify-content:center!important;
+  padding:0!important;box-sizing:border-box!important;
+  overflow:hidden!important;border-radius:0 0 0 1px!important;
+  pointer-events:none!important;
+}
+.folder-browser .drawer-3 .orbit-folder-brand{
+  width:100%!important;gap:clamp(10px,1.8vw,22px)!important;
+  display:flex!important;flex-direction:column!important;
+  align-items:center!important;justify-content:center!important;
+}
+.folder-browser .drawer-3 .orbit-folder-brand strong{
+  font:600 clamp(34px,5.4vw,76px)/1 Mirador,Georgia,serif!important;color:#fff!important;
+}
+.folder-browser .drawer-3 .orbit-folder-brand img{
+  width:clamp(92px,14vw,160px)!important;height:auto!important;
+  object-fit:contain!important;image-rendering:auto!important;
+}
+.work-list .work-orbit{
+  position:relative!important;display:block!important;box-sizing:border-box!important;
+  width:min(100%,1007px)!important;max-width:1007px!important;
+  min-height:0!important;height:auto!important;aspect-ratio:1008/605!important;
+  margin-left:auto!important;margin-right:auto!important;padding:0!important;
+  background:#f0d4df!important;border-radius:32px 86px 30px 30px!important;
+  overflow:hidden!important;box-shadow:0 7px 19px rgba(48,30,50,.18)!important;
+}
+.work-list .work-orbit .orbit-card-native{
+  position:absolute!important;inset:0!important;box-sizing:border-box!important;
+  width:100%!important;height:100%!important;min-height:0!important;
+  margin:0!important;padding:10.5% 16% 0 8%!important;
+  background:transparent!important;border:0!important;
+  border-radius:inherit!important;clip-path:none!important;
+  display:grid!important;grid-template-columns:1fr 1fr!important;
+  grid-template-rows:min-content!important;align-items:start!important;
+  column-gap:7%!important;overflow:hidden!important;isolation:isolate!important;
+}
+.work-list .work-orbit .orbit-card-native::before{
+  content:""!important;display:block!important;
+  position:absolute!important;left:0!important;top:0!important;bottom:0!important;right:auto!important;
+  width:88.2%!important;height:100%!important;box-sizing:border-box!important;
+  border-radius:32px 0 0 30px!important;clip-path:none!important;
+  background:linear-gradient(115deg,#493860 0%,#8868c5 100%)!important;
+  z-index:0!important;pointer-events:none!important;
+}
+.work-list .work-orbit .orbit-card-native::after{
+  content:""!important;display:block!important;position:absolute!important;
+  right:0!important;top:0!important;left:auto!important;bottom:auto!important;
+  width:11.8%!important;height:52%!important;background:#f0d4df!important;
+  border-radius:0 86px 55px 0!important;
+  clip-path:polygon(0 0,100% 0,100% 72%,90% 81%,66% 90%,0 100%)!important;
+  z-index:0!important;pointer-events:none!important;
+}
+.work-list .work-orbit .orbit-native-description{
+  position:relative!important;z-index:2!important;grid-column:1!important;
+  width:100%!important;max-width:330px!important;
+  font:clamp(14px,1.9vw,23px)/1.55 Outfit,Arial,sans-serif!important;
+  color:#fff!important;margin:0!important;text-align:left!important;
+}
+.work-list .work-orbit .orbit-native-brand{
+  position:relative!important;z-index:2!important;grid-column:2!important;
+  display:flex!important;flex-direction:column!important;align-items:center!important;
+  justify-content:flex-start!important;gap:16px!important;margin:-2% 0 0!important;
+}
+.work-list .work-orbit .orbit-native-brand strong{
+  font:600 clamp(42px,6.5vw,88px)/1 Mirador,Georgia,serif!important;
+  color:#fff!important;white-space:nowrap!important;
+}
+.work-list .work-orbit .orbit-native-brand img{
+  display:block!important;width:clamp(90px,13vw,155px)!important;
+  height:auto!important;object-fit:contain!important;image-rendering:auto!important;
+}
+.work-list .work-orbit .orbit-native-tab{
+  position:absolute!important;z-index:3!important;right:2.4%!important;top:8%!important;
+  width:6.5%!important;height:25%!important;
+  display:flex!important;align-items:center!important;justify-content:center!important;
+  background:#faf8f5!important;border:1px solid #bdb7b8!important;
+  border-radius:0!important;box-shadow:none!important;
+}
+.work-list .work-orbit .orbit-native-tab span{
+  display:block!important;writing-mode:vertical-rl!important;
+  transform:rotate(180deg)!important;
+  color:#2d2930!important;font:clamp(10px,1.1vw,16px)/1 Outfit,Arial,sans-serif!important;
+}
+.work-list .work-orbit .work-case-title,.work-list .work-orbit .work-description{
+  display:none!important;
+}
+.work-list .work-orbit .work-case-link{
+  position:absolute!important;z-index:4!important;left:54%!important;right:auto!important;
+  bottom:7%!important;top:auto!important;width:auto!important;height:auto!important;
+  display:inline-flex!important;align-items:center!important;gap:12px!important;
+  padding:10px 12px!important;min-height:0!important;
+  font:clamp(14px,1.6vw,22px)/1.3 Outfit,Arial,sans-serif!important;
+  color:white!important;text-decoration:none!important;background:transparent!important;
+  border:1px solid transparent!important;border-radius:7px!important;
+  cursor:pointer!important;
+}
+.work-list .work-orbit .work-case-link span{
+  position:static!important;display:inline!important;visibility:visible!important;
+  opacity:1!important;width:auto!important;height:auto!important;
+  clip-path:none!important;overflow:visible!important;color:inherit!important;
+}
+.work-list .work-orbit .work-case-link:hover,
+.work-list .work-orbit .work-case-link:focus-visible{
+  background:#ffffff25!important;border-color:#ffffff90!important;
+}
+@media(max-width:760px){
+  .work-list .work-orbit{aspect-ratio:1.15!important;border-radius:20px 60px 20px 20px!important}
+  .work-list .work-orbit .orbit-card-native{padding:10% 15% 0 7%!important;column-gap:5%!important}
+  .work-list .work-orbit .orbit-card-native::before{border-radius:20px 0 0 20px!important}
+  .work-list .work-orbit .orbit-native-description{font-size:clamp(11px,2.7vw,15px)!important}
+  .work-list .work-orbit .orbit-native-brand{gap:10px!important}
+  .work-list .work-orbit .orbit-native-brand strong{font-size:clamp(29px,7vw,46px)!important}
+  .work-list .work-orbit .orbit-native-brand img{width:clamp(55px,16vw,90px)!important}
+  .work-list .work-orbit .work-case-link{left:49%!important;bottom:6%!important;font-size:15px!important}
+  .work-list .work-orbit .orbit-native-tab{top:8%!important}
+}
