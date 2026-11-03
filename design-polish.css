@@ -136,3 +136,32 @@
 .folder-browser[data-active="3"] .drawer-3 .case-sheet,.folder-browser[data-active="3"] .drawer-3.is-open .case-sheet{left:0;width:100%;transform:none!important;transition:opacity .3s ease}
 .folder-browser[data-active="3"] .drawer-3 .case-more{opacity:1;visibility:visible;pointer-events:auto}
 }
+
+/* Mobile repair: no image filter, no blank SVG; Orbit is a native folder card. */
+.work-list .work-orbit{width:min(100%,1007px)!important;aspect-ratio:1008/605!important;min-height:0!important;margin-inline:auto;position:relative;overflow:visible}
+.work-list .work-orbit .orbit-card-native{position:absolute!important;inset:0!important;display:grid!important;grid-template-columns:1fr 1fr!important;align-items:start!important;gap:5%!important;width:100%!important;height:100%!important;min-height:0!important;padding:10% 15% 10% 8%!important;box-sizing:border-box!important;background:linear-gradient(115deg,#45345e,#8d6bd0)!important;clip-path:none!important;border-radius:30px 0 0 0!important;color:white!important;overflow:visible!important}
+.work-list .work-orbit .orbit-card-native:before{content:'';position:absolute;right:0;top:0;bottom:0;width:12%;background:#f1d2e0;border-radius:0 80px 65px 0;clip-path:polygon(0 0,75% 0,100% 8%,100% 36%,75% 43%,20% 49%,20% 100%,0 100%);z-index:0}
+.work-list .work-orbit .orbit-card-native:after{display:none!important}
+.work-list .work-orbit .orbit-native-description{position:relative;z-index:1;max-width:300px;font:clamp(13px,1.65vw,23px)/1.5 Outfit,Arial,sans-serif}
+.work-list .work-orbit .orbit-native-brand{position:relative;z-index:1;display:flex;align-items:center;flex-direction:column;gap:20px}
+.work-list .work-orbit .orbit-native-brand strong{font:600 clamp(40px,6vw,90px)/1 Mirador,Georgia,serif}
+.work-list .work-orbit .orbit-native-brand img{width:clamp(70px,12vw,150px);height:auto}
+.work-list .work-orbit .orbit-native-tab{position:absolute;z-index:2;right:2.4%;top:8%;width:6.5%;height:25%;background:#f8f6f2;border:1px solid #bfb6ba;display:flex;align-items:center;justify-content:center}
+.work-list .work-orbit .orbit-native-tab span{writing-mode:vertical-rl;transform:rotate(180deg);font:clamp(10px,1.1vw,16px)/1 Outfit,Arial,sans-serif;color:#29242a}
+.work-list .work-orbit .work-case-link{position:absolute!important;left:54%!important;top:auto!important;bottom:7%!important;width:auto!important;height:auto!important;padding:10px 14px!important;z-index:5!important;color:white!important;font:clamp(14px,1.6vw,22px)/1.3 Outfit,Arial,sans-serif!important;border:1px solid transparent!important;background:transparent!important;border-radius:8px!important;text-decoration:none!important}
+.work-list .work-orbit .work-case-link span{opacity:1!important}
+.work-list .work-orbit .work-case-link:hover,.work-list .work-orbit .work-case-link:focus-visible{background:#ffffff25!important;border-color:#ffffff90!important}
+.orbit-folder-art{grid-template-columns:1fr!important;place-items:center!important;padding:6%!important}
+.orbit-folder-brand{align-items:center!important;justify-content:center!important}
+.orbit-folder-brand strong{font-size:clamp(36px,6vw,75px)}
+.orbit-folder-brand img{width:clamp(85px,12vw,150px)}
+@media(max-width:760px){
+.work-list .work-orbit{aspect-ratio:1.15!important}
+.work-list .work-orbit .orbit-card-native{padding:10% 16% 12% 7%!important;gap:5%!important}
+.work-list .work-orbit .orbit-native-description{font-size:clamp(11px,2.6vw,15px)}
+.work-list .work-orbit .orbit-native-brand strong{font-size:clamp(30px,7vw,48px)}
+.work-list .work-orbit .orbit-native-brand img{width:clamp(56px,15vw,90px)}
+.work-list .work-orbit .work-case-link{left:49%!important;bottom:6%!important;font-size:16px!important}
+.orbit-folder-art{padding:5%!important}
+.orbit-folder-brand strong{font-size:clamp(36px,9vw,65px)}
+}
