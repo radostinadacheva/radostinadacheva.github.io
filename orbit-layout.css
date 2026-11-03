@@ -109,3 +109,15 @@
  .folder-browser .drawer-3 .orbit-folder-brand strong{font-size:52px!important}
  .folder-browser .drawer-3 .orbit-folder-brand img{width:110px!important}
 }
+
+/* Keep the fourth leaf at its Figma size in both default and opened states. */
+@media(min-width:761px){
+ .folder-browser .drawer-3,.folder-browser .drawer-3.is-open{
+   left:53.72%!important;width:46.28%!important;
+   transform:none!important;top:0!important;bottom:0!important;
+ }
+ .folder-browser .drawer-3 .case-sheet,.folder-browser .drawer-3.is-open .case-sheet{
+   inset:0!important;width:100%!important;height:100%!important;
+   transform:none!important;
+ }
+}
